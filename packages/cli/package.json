@@ -1,0 +1,23 @@
+{
+  "name": "@latch/cli",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Minimal CLI for LATCH agent workflows.",
+  "license": "MIT",
+  "bin": {
+    "latch": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "lint": "tsc -p tsconfig.json --noEmit",
+    "start": "tsx src/index.ts"
+  },
+  "dependencies": {
+    "@latch/sdk": "workspace:*",
+    "tsx": "^4.19.2",
+    "viem": "^2.21.54"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.3"
+  }
+}

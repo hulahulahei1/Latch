@@ -1,0 +1,19 @@
+{
+  "name": "@latch/sdk",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "SDK helpers for LATCH agent workflows.",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "lint": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "viem": "^2.21.54"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.3"
+  }
+}

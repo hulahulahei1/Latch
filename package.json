@@ -1,0 +1,19 @@
+{
+  "name": "latch-protocol",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Verifiable execution for AI agents on Base.",
+  "license": "MIT",
+  "packageManager": "pnpm@9.12.0",
+  "scripts": {
+    "build": "pnpm -r build",
+    "lint": "pnpm -r lint",
+    "latch": "pnpm --filter @latch/cli start"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "typescript": "^5.6.3"
+  }
+}

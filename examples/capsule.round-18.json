@@ -1,0 +1,44 @@
+{
+  "schema": "latch.capsule.v1",
+  "roundId": 18,
+  "type": "maze-time",
+  "chainId": 8453,
+  "capsuleHash": "0x93a7000000000000000000000000000000000000000000000000000000000018",
+  "programHash": "0x71ab000000000000000000000000000000000000000000000000000000000018",
+  "difficulty": 4,
+  "maze": {
+    "gates": 32,
+    "branches": 12,
+    "deadEnds": 18,
+    "routeEntropyBits": 32
+  },
+  "timeLock": {
+    "steps": 1500000,
+    "function": "sequential_hash_memory_mix"
+  },
+  "memoryLock": {
+    "memorySizeMb": 512,
+    "lanes": 4
+  },
+  "target": {
+    "leadingZeroBits": 32,
+    "digest": "0x00000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+  },
+  "hints": [
+    {
+      "level": 1,
+      "reductionBits": 4,
+      "note": "Eliminates several low-score dead gates. Does not reveal the route."
+    },
+    {
+      "level": 2,
+      "reductionBits": 8,
+      "note": "Reveals two required memory lanes. Does not reveal routeKey."
+    },
+    {
+      "level": 3,
+      "reductionBits": 12,
+      "note": "Narrows the valid branch window. Does not reveal the final nonce."
+    }
+  ]
+}
